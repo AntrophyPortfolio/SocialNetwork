@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="685.0" style="-fx-background-color: #2c2c36;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dialogs.AdminEditUserDialogController">
+   <center>
+      <GridPane style="-fx-background-color: #2c2c36;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="275.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="54.0" minWidth="0.0" percentWidth="3.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.0" minWidth="10.0" prefWidth="239.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="146.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" percentHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="2.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-text-fill: #aaaabb;" text="Login:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Password:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Name:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Lastname:" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Started school:" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Description:" GridPane.halignment="RIGHT" GridPane.rowIndex="13" />
+            <TextField fx:id="textFieldLogin" maxWidth="150.0" style="-fx-background-color: #aaaabb;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldPassword" maxWidth="150.0" style="-fx-background-color: #aaaabb;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldName" maxWidth="150.0" style="-fx-background-color: #aaaabb;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="textFieldLastName" maxWidth="150.0" style="-fx-background-color: #aaaabb;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Spinner fx:id="spinnerStartedSchool" maxWidth="150.0" style="-fx-background-color: #aaaabb;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextArea fx:id="textAreaDescription" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aaaabb; -fx-control-inner-background: #aaaabb;" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Roles:" GridPane.halignment="RIGHT" GridPane.rowIndex="11" GridPane.valignment="CENTER" />
+            <CheckBox fx:id="checkBoxAdmin" mnemonicParsing="false" style="-fx-text-fill: #aaaabb;" text="Administrator" GridPane.columnIndex="2" GridPane.rowIndex="11" GridPane.valignment="TOP" />
+            <CheckBox fx:id="checkBoxStudent" mnemonicParsing="false" style="-fx-text-fill: #aaaabb;" text="Student" GridPane.columnIndex="2" GridPane.rowIndex="11" GridPane.valignment="BOTTOM" />
+            <CheckBox fx:id="checkBoxTeacher" mnemonicParsing="false" style="-fx-text-fill: #aaaabb;" text="Teacher" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Study plan:" GridPane.halignment="RIGHT" GridPane.rowIndex="9" />
+            <Label style="-fx-text-fill: #aaaabb;" text="Study field:" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+            <ComboBox fx:id="comboBoxField" prefWidth="150.0" style="-fx-background-color: #aaaabb;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="labelStudyPlans" prefHeight="71.0" prefWidth="241.0" style="-fx-text-fill: #aaaabb;" text="STUDY_PLANS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSetNew" minWidth="100.0" mnemonicParsing="false" onAction="#handleButtonChangeAction" prefWidth="100.0" text="Set new" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="220.0" />
+               </GridPane.margin></Button>
+            <ImageView fx:id="imageViewProfilePicture" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="40.0" left="220.0" />
+               </GridPane.margin></ImageView>
+            <Button fx:id="btnInsertPhoto" minWidth="150.0" mnemonicParsing="false" onAction="#handleButtonInsertPhotoAction" text="Insert photo" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="40.0" left="220.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <GridPane style="-fx-background-color: #2c2c36;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-text-fill: #aaaabb;" text="Currently editing:" GridPane.halignment="CENTER" />
+            <Label fx:id="labelEditedUsername" style="-fx-text-fill: #aaaabb;" text="EDITED_USERNAME" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+   <bottom>
+      <GridPane style="-fx-background-color: #2c2c36;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#handleButtonSaveAction" text="Save" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#handleButtonCancelAction" text="Cancel" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
