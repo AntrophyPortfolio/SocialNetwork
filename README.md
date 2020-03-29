@@ -11,6 +11,6 @@ Semestral work Database Systems. The application uses Oracle DB. It is meant to 
 
 # Youtube Video demonstration:
 
-[![Video demonstration](https://img.youtube.com/vi/zIGcoHRmbLg/0.jpg)](https://youtu.be/zIGcoHRmbLg)
+[![Video demonstration](https://img.youtube.com/vi/zIGcoHRmbLg/0.jpg)](https://youtu.be/9Smu_a4Gy_Y)
 
 
